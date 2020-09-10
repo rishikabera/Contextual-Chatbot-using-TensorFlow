@@ -1,3 +1,5 @@
+# Installation
+-Python 3.6
 # Contextual-Chatbot-using-TensorFlow
 1. Used Intent Classification for creating a contextual chatbot.
 # Phase 1: Using NLP Concepts
@@ -9,5 +11,9 @@
 (iii)random
 (iv)JSON- for reading the 'Intent' file which is in JSON format.
 5. Intent File- used for model training purpose. It contains components like 'Tags','Patterns', and 'Responses'.
-# Phase 2 Building Neural Network
+# Phase 2 Preprocessing the data
+The data is converted into whats known as a bag of words. This will allow us to feed numerical data to our model in the next phase.
+# Phase 3 Building Neural Netwrok Model
+Here a model is created that can classify the bag of words into a specific class. In the next part we will use the model to 
+make predictions and generate responses.
 

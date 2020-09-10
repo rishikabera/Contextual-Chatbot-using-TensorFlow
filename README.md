@@ -13,7 +13,9 @@
 5. Intent File- used for model training purpose. It contains components like 'Tags','Patterns', and 'Responses'.
 # Phase 2 Preprocessing the data
 The data is converted into whats known as a bag of words. This will allow us to feed numerical data to our model in the next phase.
-# Phase 3 Building Neural Netwrok Model
+# Phase 3 Building Neural Network Model
 Here a model is created that can classify the bag of words into a specific class. In the next part we will use the model to 
 make predictions and generate responses.
+# Phase 4 Making Predictions with the model
+Using the previously created chatbot model to make predictions and chat back and forth with user.
 

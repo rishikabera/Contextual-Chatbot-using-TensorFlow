@@ -1,2 +1,4 @@
 # Contextual-Chatbot-using-TensorFlow
-We will use Intent Classification for creating a contextual chatbot.
+1. Used Intent Classification for creating a contextual chatbot.
+2. Used Natural Language Processing Libraries like nlkt( Natural Language Toolkit).
+3.

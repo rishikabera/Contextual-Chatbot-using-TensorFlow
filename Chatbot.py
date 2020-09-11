@@ -72,5 +72,16 @@ for doc in documents:
     output_row[classes.index(doc[1])] = 1
 
     training.append([bag, output_row])
+    
+    # shuffling features and turning it into np.array
+random.shuffle(training)
+training = np.array(training)
+
+# creating training lists
+train_x = list(training[:,0])
+train_y = list(training[:,1])
+
+# resetting underlying graph data
+tf.reset_default_graph()
 
 

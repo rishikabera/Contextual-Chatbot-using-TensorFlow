@@ -41,3 +41,16 @@ for intent in intents['intents']:
 # Perform stemming and lower each word as well as remove duplicates
 words = [stemmer.stem(w.lower()) for w in words if w not in ignore]
 words = sorted(list(set(words)))
+# remove duplicate classes
+classes = sorted(list(set(classes)))
+
+print (len(documents), "documents")
+print (len(classes), "classes", classes)
+print (len(words), "unique stemmed words", words)
+
+# create training data
+training = []
+output = []
+# create an empty array for output
+output_empty = [0] * len(classes)
+

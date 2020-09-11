@@ -54,3 +54,23 @@ output = []
 # create an empty array for output
 output_empty = [0] * len(classes)
 
+
+# create training set, bag of words for each sentence
+for doc in documents:
+    # initialize bag of words
+    bag = []
+    # list of tokenized words for the pattern
+    pattern_words = doc[0]
+    # stemming each word
+    pattern_words = [stemmer.stem(word.lower()) for word in pattern_words]
+    # create bag of words array
+    for w in words:
+        bag.append(1) if w in pattern_words else bag.append(0)
+
+    # output is '1' for current tag and '0' for rest of other tags
+    output_row = list(output_empty)
+    output_row[classes.index(doc[1])] = 1
+
+    training.append([bag, output_row])
+
+

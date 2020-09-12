@@ -170,7 +170,7 @@ response('What are you hours of operation?')
 
 response('What is menu for today?')
 
-#Some of other context free responses.
+
 response('Do you accept Credit Card?')
 
 response('Where can we locate you?')
